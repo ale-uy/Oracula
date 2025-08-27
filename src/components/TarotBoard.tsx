@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import TarotCard from './TarotCard';
 import { loadTarotCards, shuffleCards, type TarotCard as TarotCardType } from '../data/tarotDeck';
+import config from '../config/webhook';
 
 interface TarotBoardProps {
   onReadingComplete: (selectedCards: TarotCardType[]) => void;
@@ -62,36 +63,68 @@ export default function TarotBoard({ onReadingComplete, question }: TarotBoardPr
         setIsLoading(true);
         try {
           // Primero creamos un ID de lectura
-          const initResponse = await fetch('/api/reading-webhook', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              question,
-              firstCard: newSelectedCards[0].name,
-              secondCard: newSelectedCards[1].name,
-              thirdCard: newSelectedCards[2].name,
-            }),
-          });
+          let readingId;
+          try {
+            const initResponse = await fetch('/api/reading-webhook', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                question,
+                firstCard: newSelectedCards[0].name,
+                secondCard: newSelectedCards[1].name,
+                thirdCard: newSelectedCards[2].name,
+              }),
+            });
 
-          const initData = await initResponse.json();
-          const readingId = initData.readingId;
+            if (!initResponse.ok) throw new Error('Error creating reading');
+            const initData = await initResponse.json();
+            readingId = initData.readingId;
+          } catch (error) {
+            console.error('Error creating reading:', error);
+            throw new Error('No se pudo iniciar la lectura');
+          }
 
-          // Luego enviamos al webhook de n8n
-          const response = await fetch('http://localhost:5678/webhook/tarot-reading', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              readingId,
-              question,
-              firstCard: newSelectedCards[0].name,
-              secondCard: newSelectedCards[1].name,
-              thirdCard: newSelectedCards[2].name,
-            }),
-          });
+          // Preparamos el payload para n8n
+          const webhookPayload = {
+            readingId,
+            question,
+            firstCard: newSelectedCards[0].name,
+            secondCard: newSelectedCards[1].name,
+            thirdCard: newSelectedCards[2].name,
+          };
+
+          // Función para enviar al webhook
+          const sendToWebhook = async (url: string) => {
+            try {
+              const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(webhookPayload),
+              });
+              
+              if (!response.ok) throw new Error(`Error ${response.status}`);
+              return await response.json();
+            } catch (error) {
+              console.error(`Error sending to ${url}:`, error);
+              return null;
+            }
+          };
+
+          // Enviar a webhook de prueba y/o producción
+          const webhookUrls = [];
+          
+          if (config.isTestMode) {
+            webhookUrls.push(`${config.n8nWebhookUrl}${config.n8nWebhookTestPath}`);
+          }
+          
+          webhookUrls.push(`${config.n8nWebhookUrl}${config.n8nWebhookProdPath}`);
+          
+          // Enviamos a todos los webhooks configurados
+          await Promise.all(webhookUrls.map(url => sendToWebhook(url)));
 
           const data = await response.json();
           setReadingId(data.readingId);
