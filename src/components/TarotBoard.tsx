@@ -124,12 +124,18 @@ export default function TarotBoard({ onReadingComplete, question }: TarotBoardPr
           webhookUrls.push(`${config.n8nWebhookUrl}${config.n8nWebhookProdPath}`);
           
           // Enviamos a todos los webhooks configurados
-          await Promise.all(webhookUrls.map(url => sendToWebhook(url)));
-
-          const data = await response.json();
-          setReadingId(data.readingId);
-          setReadingComplete(true);
-          onReadingComplete(newSelectedCards);
+          const responses = await Promise.all(webhookUrls.map(url => sendToWebhook(url)));
+          
+          // Si al menos una respuesta fue exitosa, continuamos
+          const successResponse = responses.find(response => response !== null);
+          
+          if (successResponse) {
+            setReadingId(readingId); // Usamos el readingId que ya tenemos
+            setReadingComplete(true);
+            onReadingComplete(newSelectedCards);
+          } else {
+            throw new Error('No se pudo enviar la lectura a ningún webhook');
+          }
         } catch (error) {
           console.error('Error sending reading:', error);
           setInterpretation('Lo siento, ha ocurrido un error al procesar tu lectura.');
