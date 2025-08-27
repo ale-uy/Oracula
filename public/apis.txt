@@ -1,5 +1,3 @@
-He mejorado el sistema del webhook con las siguientes características:
-
 Gestión de lecturas:
 
 Generación de IDs únicos usando crypto
@@ -16,5 +14,3 @@ Flujo de trabajo:
 2. Frontend hace POST -> recibe readingId
 3. Frontend puede hacer polling con GET usando readingId
 4. API externa puede actualizar la interpretación con PUT
-
-Ahora necesitarás actualizar el frontend para manejar este nuevo flujo. ¿Quieres que te ayude con eso también?

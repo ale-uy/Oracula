@@ -13,6 +13,7 @@
 # Production
 /build
 /dist
+/public/apis.txt
 
 # Misc
 .DS_Store
