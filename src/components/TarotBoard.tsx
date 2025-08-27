@@ -61,12 +61,31 @@ export default function TarotBoard({ onReadingComplete, question }: TarotBoardPr
       if (newSelectedCards.length === 3) {
         setIsLoading(true);
         try {
-          const response = await fetch('/api/reading-webhook', {
+          // Primero creamos un ID de lectura
+          const initResponse = await fetch('/api/reading-webhook', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify({
+              question,
+              firstCard: newSelectedCards[0].name,
+              secondCard: newSelectedCards[1].name,
+              thirdCard: newSelectedCards[2].name,
+            }),
+          });
+
+          const initData = await initResponse.json();
+          const readingId = initData.readingId;
+
+          // Luego enviamos al webhook de n8n
+          const response = await fetch('http://localhost:5678/webhook/tarot-reading', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              readingId,
               question,
               firstCard: newSelectedCards[0].name,
               secondCard: newSelectedCards[1].name,
