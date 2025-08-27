@@ -16,8 +16,21 @@ interface Reading {
   interpretation?: string;
 }
 
+// Configuración de CORS
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+};
+
+// Manejador de OPTIONS para CORS
+export async function OPTIONS() {
+  return NextResponse.json({}, { headers: corsHeaders });
+}
+
 export async function POST(request: NextRequest) {
   try {
+    // Agregamos headers de CORS a la respuesta
     const body = await request.json();
     
     // Generar un ID único para la lectura
@@ -40,7 +53,7 @@ export async function POST(request: NextRequest) {
       readingId,
       status: 'pending',
       message: 'Las cartas están siendo interpretadas...'
-    });
+    }, { headers: corsHeaders });
   } catch (error) {
     return NextResponse.json(
       { error: 'Error processing reading' },
@@ -71,7 +84,7 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  return NextResponse.json(reading);
+  return NextResponse.json(reading, { headers: corsHeaders });
 }
 
 // Endpoint para que aplicaciones externas actualicen la interpretación
