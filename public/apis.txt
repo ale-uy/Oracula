@@ -1,0 +1,20 @@
+He mejorado el sistema del webhook con las siguientes características:
+
+Gestión de lecturas:
+
+Generación de IDs únicos usando crypto
+Almacenamiento en memoria usando Map (en producción usarías una base de datos)
+Interface TypeScript Reading para tipado seguro
+Endpoints:
+
+POST /api/reading-webhook: Crea una nueva lectura y retorna su ID
+GET /api/reading-webhook?id=...: Obtiene el estado de una lectura
+PUT /api/reading-webhook: Permite actualizar la interpretación
+Flujo de trabajo:
+
+1. Usuario hace la pregunta y selecciona cartas
+2. Frontend hace POST -> recibe readingId
+3. Frontend puede hacer polling con GET usando readingId
+4. API externa puede actualizar la interpretación con PUT
+
+Ahora necesitarás actualizar el frontend para manejar este nuevo flujo. ¿Quieres que te ayude con eso también?

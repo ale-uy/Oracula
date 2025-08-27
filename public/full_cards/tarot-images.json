@@ -1,0 +1,735 @@
+{
+    "description": "tarot cards and basic information about them, as well as references to corresponding scans",
+    "cards": [
+        {
+            "name": "The Fool",
+            "number": "0",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m00.jpg",
+            "Archetype": "The Divine Madman",
+            "Numerology": "0 (off the scale; pure potential)",
+            "Elemental": "Air",
+            "Mythical/Spiritual": "Adam before the fall. Christ as a wandering holy madman. Deity wrapped in human flesh. The Holy Spirit."
+        },
+        {
+            "name": "The Magician",
+            "number": "1",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m01.jpg",
+            "Archetype": "The Ego/The Self",
+            "Numerology": "1 (origins, unity, seeds)",
+            "Elemental": "The Sun/Mercury",
+            "Mythical/Spiritual": "Thoth, the Egyptian god of wisdom, known to the Greeks as Hermes and to the Romans as Mercury. Christ working miracles. Brahma, the Creator."
+        },
+        {
+            "name": "The High Priestess",
+            "number": "2",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m02.jpg",
+            "Archetype": "The Virgin/The Maiden",
+            "Numerology": "2 (division, debate, duality)",
+            "Elemental": "The Moon",
+            "Mythical/Spiritual": "The feminine aspect of divinity, particularity when expressed through virginity, as with the Virgin Mary or Isis."
+        },
+        {
+            "name": "The Empress",
+            "number": "3",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m03.jpg",
+            "Archetype": "The Mother",
+            "Numerology": "3 (expression, productivity, output)",
+            "Elemental": "Venus",
+            "Mythical/Spiritual": "Gaia, Mother Earth, Ishtar, DemeterÑmature, reproductive female divinity in every form. Also Aphrodite and Turan. "
+        },
+        {
+            "name": "The Emperor",
+            "number": "4",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m04.jpg",
+            "Archetype": "The Father",
+            "Numerology": "4 (stability, equality, persistence)",
+            "Elemental": "Mars/Aries",
+            "Mythical/Spiritual": "Masculine gods, including the Hebrew God, the Christian God, Allah, and Zeus. Patriarchs (Abraham) and lawgivers (Moses). Vishnu, the Preserver."
+        },
+        {
+            "name": "The Hierophant",
+            "number": "5",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m05.jpg",
+            "Archetype": "The Guardian/The Church/Faith",
+            "Numerology": "5 (instability, resistance, confrontation, evolution)",
+            "Elemental": "Taurus/Earth",
+            "Mythical/Spiritual": "The Christ, the Apostle Peter, Buddha, Mohammed. Popes, priests, and intercessors of every faith and tradition"
+        },
+        {
+            "name": "The Lovers",
+            "number": "6",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m06.jpg",
+            "Archetype": "The Lover/Sexual Awakening",
+            "Numerology": "6 (cooperation, collaboration, interaction)",
+            "Elemental": "Gemini",
+            "Mythical/Spiritual": "Obviously, Adam and Eve, who are depicted in RWS-influenced decks. Also Venus and Cupid, Aphrodite and Eros."
+        },
+        {
+            "name": "The Chariot",
+            "number": "7",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m07.jpg",
+            "Archetype": "The Victorious Hero",
+            "Numerology": "7 (imagination, inner work, psychology)",
+            "Elemental": "Cancer",
+            "Mythical/Spiritual": "Odysseus. Jason. The search for the Holy Grail. Christ's triumphal entry into Jerusalem."
+        },
+        {
+            "name": "Strength",
+            "number": "8",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m08.jpg",
+            "Archetype": "The Law",
+            "Numerology": "8 (movement, work) or 11 = 1 + 1 = 2 (debate, duality)",
+            "Elemental": "Libra or Leo",
+            "Mythical/Spiritual": "Themis or Justitia. Ma'at. Solomon dividing a baby. The Sword of Damocles. The giving of the Ten Commandments."
+        },
+        {
+            "name": "The Hermit",
+            "number": "9",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m09.jpg",
+            "Archetype": "The Holy Man",
+            "Numerology": "9 (fullness, readiness, ripeness)",
+            "Elemental": "Virgo",
+            "Mythical/Spiritual": "The Christ, while fasting 40 days in the wilderness. Chronos, the god of time. Father Time. Hermes."
+        },
+        {
+            "name": "Wheel of Fortune",
+            "number": "10",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m10.jpg",
+            "Archetype": "The Fates/Destiny",
+            "Numerology": "10 (finality, completion) and 10 = 1 + 0 = 1 (seed, opportunity)",
+            "Elemental": "Jupiter",
+            "Mythical/Spiritual": "The God in the Machine. Deus ex Machina. Clotho, Lachesis, and Atropos. Fortuna."
+        },
+        {
+            "name": "Justice",
+            "number": "11",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m11.jpg",
+            "Archetype": "The Id",
+            "Numerology": "11 = 1 + 1 = 2 (debate, duality) or 8 (movement, outer work)",
+            "Elemental": "Leo or Libra",
+            "Mythical/Spiritual": "Samson. Hercules. Daniel in the lion's den. The sinless Christ."
+        },
+        {
+            "name": "The Hanged Man",
+            "number": "12",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m12.jpg",
+            "Archetype": "The Traitor",
+            "Numerology": "12 = 1 + 2 = 3 (expression, productivity, output)",
+            "Elemental": "Water",
+            "Mythical/Spiritual": "The Crucified Christ. Isaac as a sacrifice. Prometheus bound. Jonah and the whale. Lazarus. Any hanged or sacrificed god. Judas."
+        },
+        {
+            "name": "Death",
+            "number": "13",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m13.jpg",
+            "Archetype": "Death",
+            "Numerology": "13 = 1 + 3 = 4 (stability, persistence)",
+            "Elemental": "Scorpio",
+            "Mythical/Spiritual": "Christ in the tomb. Hades. Hypnos. Thanatos. Stories of journeys into the underworld."
+        },
+        {
+            "name": "Temperance",
+            "number": "14",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m14.jpg",
+            "Archetype": "The Mediator",
+            "Numerology": "14 = 1 + 4 = 5 (catalyst, instability, confrontation)",
+            "Elemental": "Sagittarius",
+            "Mythical/Spiritual": "The angel seen here may be the goddess Iris. By extension, priests, priesthoods, or the transfigured Christ."
+        },
+        {
+            "name": "The Devil",
+            "number": "15",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m15.jpg",
+            "Archetype": "The Shadow, The Other",
+            "Numerology": "15 = 1 + 5 = 6 (adjustment, collaboration)",
+            "Elemental": "Capricorn",
+            "Mythical/Spiritual": "The Biblical Satan, certainly. Fallen angels, including Lucifer. Bacchus and Pan. Tempters and serpents of every stripe."
+        },
+        {
+            "name": "The Tower",
+            "number": "16",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m16.jpg",
+            "Archetype": "The Shattered Ego",
+            "Numerology": "16 = 1 + 6 = 7 (psychology, imagination, inner work)",
+            "Elemental": "Mars",
+            "Mythical/Spiritual": "The Tower of Babel. The destruction of Sodom and Gomorrah. Shiva's destructive dance. The lightning of Zeus and Thor."
+        },
+        {
+            "name": "The Star",
+            "number": "17",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m17.jpg",
+            "Archetype": "The Heavenly Guide",
+            "Numerology": "17 = 1 + 7 = 8 (action, movement, swiftness)",
+            "Elemental": "Aquarius",
+            "Mythical/Spiritual": "The star that guided the Magi. Aphrodite. Venus. The Pleiades. Moses bringing forth water from the rock."
+        },
+        {
+            "name": "The Moon",
+            "number": "18",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m18.jpg",
+            "Archetype": "The Holy Feminine/The Crone",
+            "Numerology": "18 = 1 + 8 = 9 (fullness, readiness, ripeness)",
+            "Elemental": "Pisces",
+            "Mythical/Spiritual": "Kali, the dark-skinned divine mother associated with time, the eternal night, and the female principle. Hecate, goddess of night and darkness, who, like Anubis, assists others in their travels to the underworld. "
+        },
+        {
+            "name": "The Sun",
+            "number": "19",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m19.jpg",
+            "Archetype": "The Holy Masculine",
+            "Numerology": "19 = 1 + 9 = 10 (completion, exhaustion) 1 + 0 = 1 (starting point, opportunity)",
+            "Elemental": "The Sun",
+            "Mythical/Spiritual": "God the Father. Sun gods, including Ra, Apollo, and Helios. The moment of baptism. Claiming a new faith as your own."
+        },
+        {
+            "name": "Judgement",
+            "number": "20",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m20.jpg",
+            "Archetype": "Resurrection",
+            "Numerology": "20 = 2 + 0 = 2 (division, duality)",
+            "Elemental": "Fire",
+            "Mythical/Spiritual": "The resurrected Christ. The Last Judgment of Revelation. The phoenix, which rises to new life from its own ashes."
+        },
+        {
+            "name": "The World",
+            "number": "21",
+            "arcana": "Major Arcana",
+            "suit": "Trump",
+            "img": "m21.jpg",
+            "Archetype": "Enlightenment",
+            "Numerology": "21 = 2 + 1 = 3 (expression, result)",
+            "Elemental": "Saturn",
+            "Mythical/Spiritual": "The ascended Christ. The Buddha attaining enlightenment. The alpha and the omega. The completion of the alchemist's great work."
+        },
+        {
+            "name": "Ace of Cups",
+            "number": "1",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c01.jpg",
+            "Numerology": "1 (The Origin: the starting point, the seed, opportunity)",
+            "Astrology": "Cancer, Scorpio, Pisces"
+        },
+        {
+            "name": "Two of Cups",
+            "number": "2",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c02.jpg",
+            "Numerology": "2 (The Other: duality, division, debate)",
+            "Astrology": "Venus in Cancer"
+        },
+        {
+            "name": "Three of Cups",
+            "number": "3",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c03.jpg",
+            "Numerology": "3 (The Result: expression, productivity, output)",
+            "Astrology": "Mercury in Cancer"
+        },
+        {
+            "name": "Four of Cups",
+            "number": "4",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c04.jpg",
+            "Numerology": "4 (The Status Quo: stability, equality, persistence)",
+            "Astrology": "Moon in Cancer"
+        },
+        {
+            "name": "Five of Cups",
+            "number": "5",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c05.jpg",
+            "Numerology": "5 (The Catalyst: instability, resistance, confrontation)",
+            "Astrology": "Mars in Scorpio"
+        },
+        {
+            "name": "Six of Cups",
+            "number": "6",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c06.jpg",
+            "Numerology": "6 (The Adjustment: cooperation, collaboration, interaction)",
+            "Astrology": "Sun in Scorpio"
+        },
+        {
+            "name": "Seven of Cups",
+            "number": "7",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c07.jpg",
+            "Numerology": "7 (The Motive: imagination, inner work, psychology)",
+            "Astrology": "Venus in Scorpio"
+        },
+        {
+            "name": "Eight of Cups",
+            "number": "8",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c08.jpg",
+            "Numerology": "8 (The Action: movement, outer work, swiftness)",
+            "Astrology": "Saturn in Pisces"
+        },
+        {
+            "name": "Nine of Cups",
+            "number": "9",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c09.jpg",
+            "Numerology": "9 (The Completion: fullness, readiness, ripeness)",
+            "Astrology": "Jupiter in Pisces"
+        },
+        {
+            "name": "Ten of Cups",
+            "number": "10",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c10.jpg",
+            "Numerology": "10 (The End: finality, completion, exhaustion)",
+            "Astrology": "Mars in Pisces"
+        },
+        {
+            "name": "Page of Cups",
+            "number": "11",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c11.jpg",
+            "Elemental": "Earth of Water."
+        },
+        {
+            "name": "Knight of Cups",
+            "number": "12",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c12.jpg",
+            "Elemental": "Air of Water."
+        },
+        {
+            "name": "Queen of Cups",
+            "number": "13",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c13.jpg",
+            "Elemental": "Water of Water."
+        },
+        {
+            "name": "King of Cups",
+            "number": "14",
+            "arcana": "Minor Arcana",
+            "suit": "Cups",
+            "img": "c14.jpg",
+            "Elemental": "Fire of Water."
+        },
+        {
+            "name": "Ace of Swords",
+            "number": "1",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s01.jpg",
+            "Numerology": "1 (The Origin: the starting point, the seed, opportunity)",
+            "Astrology": "Libra, Aquarius, Gemini"
+        },
+        {
+            "name": "Two of Swords",
+            "number": "2",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s02.jpg",
+            "Numerology": "2 (The Other: duality, division, debate)",
+            "Astrology": "Moon in Libra"
+        },
+        {
+            "name": "Three of Swords",
+            "number": "3",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s03.jpg",
+            "Numerology": "3 (The Result: expression, productivity, output)",
+            "Astrology": "Saturn in Libra"
+        },
+        {
+            "name": "Four of Swords",
+            "number": "4",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s04.jpg",
+            "Numerology": "4 (The Status Quo: stability, equality, persistence)",
+            "Astrology": "Jupiter in Libra"
+        },
+        {
+            "name": "Five of Swords",
+            "number": "5",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s05.jpg",
+            "Numerology": "5 (The Catalyst: instability, resistance, confrontation)",
+            "Astrology": "Venus in Aquarius"
+        },
+        {
+            "name": "Six of Swords",
+            "number": "6",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s06.jpg",
+            "Numerology": "6 (The Adjustment: cooperation, collaboration, interaction)",
+            "Astrology": "Mercury in Aquarius"
+        },
+        {
+            "name": "Seven of Swords",
+            "number": "7",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s07.jpg",
+            "Numerology": "7 (The Motive: imagination, inner work, psychology)",
+            "Astrology": "Moon in Aquarius"
+        },
+        {
+            "name": "Eight of Swords",
+            "number": "8",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s08.jpg",
+            "Numerology": "8 (The Action: movement, outer work, swiftness)",
+            "Astrology": "Jupiter in Gemini"
+        },
+        {
+            "name": "Nine of Swords",
+            "number": "9",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s09.jpg",
+            "Numerology": "9 (The Completion: fullness, readiness, ripeness)",
+            "Astrology": "Mars in Gemini"
+        },
+        {
+            "name": "Ten of Swords",
+            "number": "10",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s10.jpg",
+            "Numerology": "10 (The End: finality, completion, exhaustion)",
+            "Astrology": "Sun in Gemini"
+        },
+        {
+            "name": "Page of Swords",
+            "number": "11",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s11.jpg",
+            "Elemental": "Earth of Air."
+        },
+        {
+            "name": "Knight of Swords",
+            "number": "12",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s12.jpg",
+            "Elemental": "Air of Air."
+        },
+        {
+            "name": "Queen of Swords",
+            "number": "13",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s13.jpg",
+            "Elemental": "Water of Air."
+        },
+        {
+            "name": "King of Swords",
+            "number": "14",
+            "arcana": "Minor Arcana",
+            "suit": "Swords",
+            "img": "s14.jpg",
+            "Elemental": "Fire of Air."
+        },
+        {
+            "name": "Ace of Wands",
+            "number": "1",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w01.jpg",
+            "Numerology": "1 (The Origin: the starting point, the seed, opportunity)",
+            "Astrology": "Aries, Leo, Sagittarius"
+        },
+        {
+            "name": "Two of Wands",
+            "number": "2",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w02.jpg",
+            "Numerology": "2 (The Other: division, debate, duality)",
+            "Astrology": "Mars in Aries"
+        },
+        {
+            "name": "Three of Wands",
+            "number": "3",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w03.jpg",
+            "Numerology": "3 (The Result: expression, productivity, output)",
+            "Astrology": "Sun in Aries"
+        },
+        {
+            "name": "Four of Wands",
+            "number": "4",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w04.jpg",
+            "Numerology": "4 (The Status Quo: stability, equality, persistence)",
+            "Astrology": "Venus in Aries"
+        },
+        {
+            "name": "Five of Wands",
+            "number": "5",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w05.jpg",
+            "Numerology": "5 (The Catalyst: instability, resistance, confrontation)",
+            "Astrology": "Saturn in Leo"
+        },
+        {
+            "name": "Six of Wands",
+            "number": "6",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w06.jpg",
+            "Numerology": "6 (The Adjustment: cooperation, collaboration, interaction)",
+            "Astrology": "Jupiter in Leo"
+        },
+        {
+            "name": "Seven of Wands",
+            "number": "7",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w07.jpg",
+            "Numerology": "7 (The Motive: imagination, inner work, psychology)",
+            "Astrology": "Mars in Leo"
+        },
+        {
+            "name": "Eight of Wands",
+            "number": "8",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w08.jpg",
+            "Numerology": "8 (The Action: movement, outer work, swiftness)",
+            "Astrology": "Mercury in Sagittarius"
+        },
+        {
+            "name": "Nine of Wands",
+            "number": "9",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w09.jpg",
+            "Numerology": "9 (The Completion: fullness, readiness, ripeness)",
+            "Astrology": "Moon in Sagittarius"
+        },
+        {
+            "name": "Ten of Wands",
+            "number": "10",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w10.jpg",
+            "Numerology": "10 (The End: finality, completion, exhaustion)",
+            "Astrology": "Saturn in Sagittarius"
+        },
+        {
+            "name": "Page of Wands",
+            "number": "11",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w11.jpg",
+            "Elemental": "Earth of Fire."
+        },
+        {
+            "name": "Knight of Wands",
+            "number": "12",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w12.jpg",
+            "Elemental": "Air of Fire."
+        },
+        {
+            "name": "Queen of Wands",
+            "number": "13",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w13.jpg",
+            "Elemental": "Water of Fire."
+        },
+        {
+            "name": "King of Wands",
+            "number": "14",
+            "arcana": "Minor Arcana",
+            "suit": "Wands",
+            "img": "w14.jpg",
+            "Elemental": "Fire of Fire"
+        },
+        {
+            "name": "Ace of Pentacles",
+            "number": "1",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p01.jpg",
+            "Numerology": "1 (The Origin: the starting point, the seed, opportunity)",
+            "Astrology": "Capricorn, Taurus, Virgo"
+        },
+        {
+            "name": "Two of Pentacles",
+            "number": "2",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p02.jpg",
+            "Numerology": "2 (The Other: duality, division, debate)",
+            "Astrology": "Jupiter in Capricorn"
+        },
+        {
+            "name": "Three of Pentacles",
+            "number": "3",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p03.jpg",
+            "Numerology": "3 (The Result: expression, productivity, output)",
+            "Astrology": "Mars in Capricorn"
+        },
+        {
+            "name": "Four of Pentacles",
+            "number": "4",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p04.jpg",
+            "Numerology": "4 (The Status Quo: stability, equality, persistence)",
+            "Astrology": "Sun in Capricorn"
+        },
+        {
+            "name": "Five of Pentacles",
+            "number": "5",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p05.jpg",
+            "Numerology": "5 (The Catalyst: instability, resistance, confrontation)",
+            "Astrology": "Mercury in Taurus"
+        },
+        {
+            "name": "Six of Pentacles",
+            "number": "6",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p06.jpg",
+            "Numerology": "6 (The Adjustment: cooperation, collaboration, interaction)",
+            "Astrology": "Moon in Taurus"
+        },
+        {
+            "name": "Seven of Pentacles",
+            "number": "7",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p07.jpg",
+            "Numerology": "7 (The Motive: imagination, inner work, psychology)",
+            "Astrology": "Saturn in Taurus"
+        },
+        {
+            "name": "Eight of Pentacles",
+            "number": "8",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p08.jpg",
+            "Numerology": "8 (The Action: movement, outer work, swiftness)",
+            "Astrology": "Sun in Virgo"
+        },
+        {
+            "name": "Nine of Pentacles",
+            "number": "9",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p09.jpg",
+            "Numerology": "9 (The Completion: fullness, readiness, ripeness)",
+            "Astrology": "Venus in Virgo"
+        },
+        {
+            "name": "Ten of Pentacles",
+            "number": "10",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p10.jpg",
+            "Numerology": "10 (The End: finality, completion, exhaustion)",
+            "Astrology": "Mercury in Virgo"
+        },
+        {
+            "name": "Page of Pentacles",
+            "number": "11",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p11.jpg",
+            "Elemental": "Earth of Earth."
+        },
+        {
+            "name": "Knight of Pentacles",
+            "number": "12",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p12.jpg",
+            "Elemental": "Air of Earth."
+        },
+        {
+            "name": "Queen of Pentacles",
+            "number": "13",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p13.jpg",
+            "Elemental": "Water of Earth."
+        },
+        {
+            "name": "King of Pentacles",
+            "number": "14",
+            "arcana": "Minor Arcana",
+            "suit": "Pentacles",
+            "img": "p14.jpg",
+            "Elemental": "Fire of Earth."
+        }
+    ]
+}
