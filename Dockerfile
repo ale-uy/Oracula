@@ -24,7 +24,7 @@ FROM node:18-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
-ENV NEXT_PUBLIC_N8N_WEBHOOK_URL=http://host.docker.internal:5678
+ENV NEXT_PUBLIC_N8N_WEBHOOK_URL=http://n8n:5678
 ENV NEXT_PUBLIC_TEST_MODE=true
 
 # Copy built assets from builder
