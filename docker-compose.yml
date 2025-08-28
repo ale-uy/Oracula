@@ -6,4 +6,10 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+      - NEXT_PUBLIC_N8N_WEBHOOK_URL=http://host.docker.internal:5678
+      - NEXT_PUBLIC_N8N_TEST_PATH=/webhook-test/tarot-reading
+      - NEXT_PUBLIC_N8N_PROD_PATH=/webhook/tarot-reading
+      - NEXT_PUBLIC_TEST_MODE=true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     restart: unless-stopped
